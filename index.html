@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- ........first section................ -->
+    <div class="custom-section">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social icons as needed -->
+        </div>
+
+        <div class="info-section">
+            <div>
+                Phone: 123-456-7890
+            </div>
+            <div>
+               FAQs
+            </div>
+            <div>
+                Information
+            </div>
+        </div>
+    </div>
+
+
+<!-- ........search section..................... -->
+
+ 
+<div class="search-section">
+    <div class="logo">
+        <img src="logo.png" alt="Website Logo">
+    </div>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <i class="fas fa-search search-icon"  onclick="toggleSearch()"></i>
+        <i class="fas fa-times cancel-icon" style="display: none;" onclick="toggleSearch()"></i>
+    </div>
+</div>
+
+
+
+<!-- ...............navbar................... -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
+    <a href="#login">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+</nav>
+
+
+<!-- ...............carosel............................. -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slide3.jpg" class="d-block w-100" style="height: 60vh;" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="margin-bottom: 50px;">
+              <h1 style="color: #fbd232; font-weight: 800;margin-bottom: 40px;">First slide label</h1>
+              <p style="font-size: 1.5rem; color: black;">Some representative placeholder content for the first slide.</p>
+              <button class="carosel-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slide2.jpg" class="d-block w-100" style="height: 60vh;" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="margin-bottom: 50px;">
+              <h1 style="color: #fbd232; font-weight: 800;margin-bottom: 40px;">Second slide label</h1>
+              <p style="font-size: 1.5rem;color: black;">Some representative placeholder content for the second slide.</p>
+              <button class="carosel-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slide1.jpg" class="d-block w-100 " style="height: 60vh;" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="margin-bottom: 50px;">
+              <h1 style="color: #fbd232; font-weight: 800;margin-bottom: 40px;">Third slide label</h1>
+              <p style="font-size: 1.5rem;color: black;">Some representative placeholder content for the third slide.</p>
+              <button class="carosel-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  <!-- ..............marque.............. -->
+  <div class="marque">
+    <marquee>Welcome to Home Services Lahore. Handyman services can be seen here</marquee>
+
+  </div>
+
+
+  <!-- .............card section.................. -->
+
+
+  <div class="containr">
+    <p style="color: #1d2634;font-weight: 500;font-size: 1.2rem;">We can handle professionally home and office Maintenance & Repair Construction, or Other Handyman Services in Lahore</p>
+    <h2 style="color: #fbd232; font-weight: 600;">We Start only at Rs. 500 only!</h2>
+    <h1 class="section-heading">We are offering following</h1>
+    <p class="section-paragraph"><span>Handyman</span> Services in <span>Lahore</span></p>
+
+    <div class="sub-container">
+        <div class="sub-div">
+            <img src="./images/carpanter.png" alt="Product 1">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Carpanter</a>
+            </div>
+        </div>
+
+        <div class="sub-div">
+            <img src="./images/Builder.png" alt="Product 2">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Builder</a>
+            </div>
+        </div>
+
+        <div class="sub-div">
+            <img src="./images/celing.png" alt="Product 3">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Celing</a>
+            </div>
+        </div>
+
+        <div class="sub-div">
+            <img src="./images/cleaning.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Cleaning</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/constructor.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Constructor</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/electrician.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Electrician</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/fridge-fitting.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Fridge-fitting</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/geasyer-reparing-1.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Geasyer-reparing</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/glass_window.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Glass_window</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/icons.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Icons</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/interior-design.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Interior-design</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/jucior-mechanic-1.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Jucior-mechanic</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/led-reparing.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Led-reparing</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/meson.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Meson</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/Moving-and-Packing.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Moving-and-Packing</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/painter.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Painter</a>
+            </div>
+        </div>
+        <div class="sub-div">
+            <img src="./images/Pick-and-drop.png" alt="Product 4">
+            <div class="sub-div-content">
+                <i class="fa-solid fa-hammer sub-div-content-icons" ></i>
+                <a href="#" class="sub-div-button">Pick-and-drop</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- .........................How it Works?............... -->
+
+<div class="work-section">
+    <h1 class="text-center" style="padding-bottom: 50px; font-weight: 800;">How it Works?</h1>
+    <div class="row"  style="background-color:#fbd232; padding: 0px 30px;">
+      <div class="col-md-3">
+    <h3 style="font-weight: 700;">Book Service</h3>
+    </div>
+      <div class="col-md-3" >
+    <h3 style="font-weight: 700;">Handyman Arrives</h3>
+    </div>
+    <div class="col-md-3" >
+        <h3 style="font-weight: 700;">Job Done</h3>
+        </div>
+        <div class="col-md-3">
+            <h3 style="font-weight: 700;">Satisfaction Guranteed</h3>
+            </div>
+    </div>
+  </div>
+
+<!-- .....................Our Projects........ -->
+
+<section class="project">
+    <h1>Our Projects</h1>
+  <div class="progress-section">
+    <div class="progress-circle circle-1">155</div>
+    <div class="progress-circle circle-2">100</div>
+    <div class="progress-circle circle-3">160</div>
+    <div class="progress-circle circle-4">100</div>
+  </div>
+</section>
+
+
+<!-- .............contact........ -->
+
+<div  class="contact">
+    <h1>You can Book or Call us for Handyman Services in Lahore
+        @ +923214707808</h1>
+    <div class="contact-btn">
+      <button>Book Now</button>
+      <button>Pricing</button>
+    </div>
+</div>
+<!-- ........................ -->
+
+<!-- ............footer...... -->
+
+<footer>
+    <div class="contact-details">
+        <div class="section">
+            <h3 class="h33">Contact Details</h3>
+            <p>Address: Your Street, City, Country</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </div>
+    </div>
+
+   <div class="services">
+    <h3 class="h33">Our Services</h3>
+    <div class="services-section">
+        
+        <div class="section">
+            <div class="service">Service 1</div>
+            <div class="service">Service 2</div>
+            <div class="service">Service 3</div>
+            <div class="service">Service 4</div>
+            <div class="service">Service 5</div>
+            <div class="service">Service 6</div>
+            <div class="service">Service 7</div>
+            <div class="service">Service 8</div>
+        </div>
+
+        <div class="section">
+            <div class="service">Service 1</div>
+            <div class="service">Service 2</div>
+            <div class="service">Service 1</div>
+            <div class="service">Service 2</div>
+            <div class="service">Service 1</div>
+            <div class="service">Service 2</div>
+            <div class="service">Service 1</div>
+            <div class="service">Service 2</div>
+        </div>
+    </div>
+   </div>
+
+   <div class="services">
+    <h3 class="h33">Home Services</h3>
+    <div class="services-section">
+        <div class="section">
+            <div class="service">Home1</div>
+            <div class="service">Home2</div>
+            <div class="service">Home3</div>
+            <div class="service">Home4</div>
+            <div class="service">Home5</div>
+            <div class="service">Home6</div>
+            <div class="service">Home7</div>
+            <div class="service">Home8</div>
+        </div>
+
+        <div class="section">
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+            <div class="service"> Service</div>
+        </div>
+    </div>
+   </div>
+</footer>
+
+<div class="copyright">
+<p>Made with  <i class="fa-solid fa-heart" style="color:gray;"></i>  By: First Idea Web Development.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="newscript.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
